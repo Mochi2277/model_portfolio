@@ -1,0 +1,346 @@
+/* フォントファミリーに 'Antic Didone' を指定 */
+body, .english-text {
+  font-family: "Antic Didone", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 日本語のテキストには 'BIZ UDPゴシック' を追加指定 */
+.japanese-text {
+  font-family: "BIZ UDPゴシック", "Antic Didone", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+#logo {
+  max-width: 250px; /* ロゴの最大幅を指定 */
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color:#333;
+  margin-right: 50px !important;
+  font-size: 1.5em;
+}
+
+#header-image {
+  width: 100%;
+  height: auto;
+}
+
+/* 以下はポートフォリオのスタイル */
+section {
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.profile h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+.profile-content {
+  display: flex;
+  align-items: center; /* 垂直方向の中央寄せ */
+  margin-left: 100px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  max-width: 250px;
+  margin-right: 20px; /* プロフィール画像とテキストの間の隙間 */
+}
+
+.profile-text {
+  flex-grow: 1; /* 残りのスペースを占有 */
+  line-height: 1.5;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.profile-text li{
+  line-height: 1.5;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+.profile-text span{
+  display: inline-block;
+  width:10em;
+}
+
+.sns-icons {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.sns-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sns-icons img {
+  width: 40px;
+  height: auto;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+.contact p {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+.dm-icons {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.dm-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dm-icons img {
+  width: 170px;
+  height: auto;
+}
+
+
+.history h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+.history ul {
+  text-align: left;
+  list-style-type: none;
+  margin-left: 100px;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.history li {
+  margin-bottom: 10px;
+}
+
+.history span{
+  display: inline-block;
+  width:9em;
+}
+
+
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+.skills h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.skills p{
+  text-align: left;
+  margin-bottom: 5px;
+  margin-left: 1%;
+}
+
+.skills li{
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-box {
+  border: 2px solid #d3d3d3;
+  padding: 15px;
+  text-align: left;
+  width: 40%;
+  margin-bottom: 20px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin-left: 0;
+}
+
+.skill-box ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-box li {
+  margin-bottom: 10px;
+}
+
+.skills span{
+  display: inline-block;
+  width:7em;
+}
+.work-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.work-item {
+  width: calc(32% - 20px); /* 3つ横に並べるために幅を調整 */
+  margin-bottom: 20px;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+.work-item h3 {
+  margin-top: 10px;
+}
+
+.work-item p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.work h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+#topBtn img {
+  width: 70px; /* ボタンの幅を適切なサイズに調整 */
+  height: 70px; /* ボタンの高さを適切なサイズに調整 */
+}
+
+/* ページ上部にスクロールされたらボタンを表示する */
+body.scrolled #topBtn {
+  display: block;
+}
+
+/* 初期状態で非表示 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.0s ease, transform 1.0s ease;
+}
+
+/* スクロールすると表示 */
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* メディアクエリ: ディスプレイの幅が480px以下の場合 */
+@media screen and (max-width: 480px) {
+  header {
+    justify-content: center; /* ヘッダー内の要素を中央寄せ */
+  }
+
+  nav {
+    display: none; /* メニュー非表示 */
+  }
+
+  .profile-content {
+    flex-direction: column; /* プロフィール画像とテキストを縦に並べる */
+    align-items: center; /* 中央寄せ */
+    margin-left: 0;
+  }
+
+  .profile-image {
+    margin-right: 0; /* 間隙間なし */
+    max-width: 50%;
+  }
+
+  .skills .skill-container,
+  .work-container {
+    padding: 0px !important;
+    flex-direction: column; /* 横並びから縦並びに変更 */
+    align-items: center; /* 中央寄せ */
+  }
+
+  .skill-box {
+    width: 95%;
+  }
+  
+  .skills p {
+    text-align: left;
+    padding: 0 !important;
+  }
+
+  .work-item {
+    width: 100%; /* 幅を100%に設定 */
+  }
+
+  .history span,
+  .reserch span{
+    display: block; /* ブロック要素に変更 */
+    width: auto; /* 幅を自動調整 */
+  }
+
+  .profile-text {
+    margin-left: 0%;
+    margin-top: 10%;
+  }
+
+  .japanese-text,
+  .history ul,
+  .reserch ul,
+  body {
+    font-size: 0.9em;
+    margin-left: 0%; /* 全体的に文字サイズを小さく */
+  }
+
+  #topBtn img {
+    width: 40px; /* ボタンの幅を小さく調整 */
+    height: 40px; /* ボタンの高さを小さく調整 */
+  }
+}
