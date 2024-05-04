@@ -311,7 +311,7 @@ body.scrolled #topBtn {
     width: 95%;
   }
   
-  .skills p {
+  .skills li {
     text-align: left;
     padding: 0 !important;
     margin-right: 40px;
