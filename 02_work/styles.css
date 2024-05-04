@@ -1,0 +1,171 @@
+/* フォントファミリーに 'Antic Didone' を指定 */
+body, .english-text {
+  font-family: "Antic Didone", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 日本語のテキストには 'BIZ UDPゴシック' を追加指定 */
+.japanese-text {
+  font-family: "BIZ UDPゴシック", "Antic Didone", serif;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.work h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+/* 以下はポートフォリオのスタイル */
+section {
+  padding: 10px;
+}
+
+.title h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.title ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+#photo {
+  display: block; /* インライン要素からブロック要素に変更 */
+  margin: auto; /* 自動的に中央に配置 */
+  margin-bottom: 20px;
+}
+
+.text ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.detail h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 1.3em;
+}
+
+.detail ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 50px !important;
+  margin-left: 50px !important;
+  font-size: 1.8em;
+  align-items: center;
+}
+
+/* 初期状態で非表示 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.0s ease, transform 1.0s ease;
+}
+
+/* スクロールすると表示 */
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* メディアクエリ: ディスプレイの幅が480px以下の場合 */
+@media screen and (max-width: 480px) {
+  body, .english-text {
+    font-size: 0.9em; /* 全体的に文字サイズを小さく */
+  }
+
+  header {
+    padding: 5px; /* ヘッダーのパディングを小さく */
+  }
+
+  .work h2,
+  .title h2{
+    font-size: 1.8em; /* 見出しのフォントサイズを調整 */
+    margin-bottom: 5px; /* マージンを小さく */
+  }
+
+  .title h2,
+  .detail h2 {
+    font-size: 1.2em;
+  }
+  section {
+    padding: 5px; /* セクションのパディングを小さく */
+  }
+
+  .text ul {
+    margin-left: 20px; /* 左マージンを調整 */
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-align: left;
+  }
+
+  .title ul,
+  .detail ul {
+    margin-left: 20px; /* 左マージンを調整 */
+    margin-right: 20px;
+    font-size: 0.9em;
+  }
+
+  img {
+    width: 90%; /* 画像の幅を100%に調整 */
+  }
+
+  #dashbord {
+    display: block;
+    margin: auto;
+  }
+
+  nav {
+    flex-direction: row; /* ナビゲーションを横に配置 */
+    justify-content: center; /* 中央寄せ */
+    align-items: center;
+    margin-bottom: 20px; /* マージンを小さく */
+  }
+
+  nav a {
+    margin-right: 20px !important; /* 右マージンを追加 */
+    margin-left: 20px !important; /* 左マージンを追加 */
+    font-size: 2.5em; /* ナビゲーションのフォントサイズを調整 */
+  }
+}
+
+  .fade-in,
+  .fade-in.is-visible {
+    transform: none; /* スクロール時の変化を削除 */
+  }
+
