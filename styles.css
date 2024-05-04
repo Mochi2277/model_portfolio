@@ -179,6 +179,7 @@ img {
 .skills li{
   text-align: left;
   margin-bottom: 10px;
+  list-style-type: none;
 }
 
 .skill-container {
